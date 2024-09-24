@@ -18,8 +18,8 @@ func main() {
 	router.POST("/upload_image", apiUser.UploadImage)
 
 	//TASK API
-	router.POST("/get_list_tasks", apiTasks.GetAllTasks)
-	router.POST("/update_status_task", apiTasks.UpdateStatusTask)
+	router.GET("/get_list_tasks", apiTasks.GetAllTasks)
+	router.POST("/edit_task", apiTasks.EditTask)
 	router.POST("/delete_task", apiTasks.DeleteTask)
 	router.POST("/create_task", apiTasks.CreateTask)
 
